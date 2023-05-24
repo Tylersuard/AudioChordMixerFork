@@ -1,8 +1,9 @@
-# ChordMixer: A Scalable Neural Attention Model For Sequences With Different Lengths [Accepted to ICLR'23]
+#AudioChordMixer
+
+This is an adaptation of ChordMixer by Ruslan Khalitov, et. al. See ChordMixer: A Scalable Neural Attention Model For Sequences With Different Lengths [Accepted to ICLR'23]
 
 [OpenReview](https://openreview.net/forum?id=E8mzu3JbdR)
 
-This is an adaptation of ChordMixer by Ruslan Khalitov, et. al.
 
 This model is designed to take in audio files as a sequence of audio samples, rather than a spectrogram image as is customary with audio processing.
 
