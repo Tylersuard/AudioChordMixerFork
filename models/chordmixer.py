@@ -292,7 +292,8 @@ class ChordMixerEncoder(nn.Module):
     def forward(self, x, lengths=None):
         # If var_len, use a variable number of layers
         if self.var_len:
-            n_layers = torch.ceil(torch.log2(lengths[0])).detach().cpu().int()
+            n_layers = 2
+            # n_layers = torch.ceil(torch.log2(lengths[0])).detach().cpu().int()
         else:
             n_layers = self.max_n_layers
 
