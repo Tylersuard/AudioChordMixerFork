@@ -6,7 +6,7 @@ This is an adaptation of ChordMixer by Ruslan Khalitov, et. al. See ChordMixer: 
 [OpenReview](https://openreview.net/forum?id=E8mzu3JbdR)
 
 
-This model is designed to take in audio files as a sequence of audio samples, rather than a spectrogram image as is customary with audio processing.
+This model is designed to take in audio files as a sequence of audio samples, rather than a spectrogram image as is customary with audio processing.  For why this is important, see this Medium article: https://medium.com/@ceo_44783/unleashing-the-potential-ais-leap-forward-in-understanding-audio-24281e05bbe8
 
 The dataset comes from HuggingFace's speech_commands v0.01 dataset (which is thousands of one-second audio recordings of 30 different speech commands), and has been pared down to only 3 different classes.
 
