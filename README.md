@@ -1,4 +1,4 @@
-#AudioChordMixer
+# AudioChordMixer
 
 This is an adaptation of ChordMixer by Ruslan Khalitov, et. al. See ChordMixer: A Scalable Neural Attention Model For Sequences With Different Lengths [Accepted to ICLR'23]
 
