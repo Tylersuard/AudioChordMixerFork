@@ -80,6 +80,9 @@ class LitMixer(pl.LightningModule):
         return outputs
     
     def training_step_end(self, outputs):
+        # print(outputs)
+        # print(outputs['preds'])
+        # print(outputs['target'])
         self.train_acc(outputs['preds'], outputs['target'])
         self.log('train_acc', self.train_acc, on_step=True, on_epoch=True)
         return {'loss': outputs['loss'].sum()}
