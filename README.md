@@ -1,5 +1,7 @@
 # AudioChordMixer
 
+To run in Google Colab, just open Google Colab, go to file --> open, then open from github, and paste in the URL of this repo.
+
 This is an adaptation of ChordMixer by Ruslan Khalitov, et. al. See ChordMixer: A Scalable Neural Attention Model For Sequences With Different Lengths [Accepted to ICLR'23]
 
 [OpenReview](https://openreview.net/forum?id=E8mzu3JbdR)
