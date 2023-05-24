@@ -2,6 +2,8 @@ from .genbank import GenbankDataModule
 from .longdoc import LongdocDataModule
 from .adding  import AddingDataModule
 
+from .speech_commands import SpeechCommandsDataModule
+
 from .lra_listops import ListOpsDataModule
 from .lra_listops_var import ListOpsDataModuleVar
 from .lra_image import CIFAR10
@@ -17,7 +19,17 @@ def map_dataset(
     batch_size,
     diff_lengths
 ):
-    if taskname == 'longdoc':
+
+    if taskname == 'speech_commands':
+      print('TASKNAME ',taskname)
+      return SpeechCommandsDataModule(
+        data_dir,
+        taskname,
+        num_workers,
+        batch_size
+      )
+
+    elif taskname == 'longdoc':
         return LongdocDataModule(
             data_dir=data_dir,
             taskname=taskname,
