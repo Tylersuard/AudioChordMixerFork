@@ -1,5 +1,27 @@
 paths:
   data: ${hydra:runtime.cwd}/data
+speech_commands:
+    chordmixer:
+      backbone:
+        var_len: True
+        input_size: 256
+        output_size: 3
+        max_seq_len: 16000
+        hidden_size: 128
+        embedding_type: 'sparse'
+        track_size: 12
+        mlp_dropout: 0.1
+        layer_dropout: 0
+        prenorm: None
+        norm: None
+        decoder: 'linear'
+      training:
+        n_epochs: 20
+        batch_size: 2
+        lr: 0.0001
+        weight_decay: 0.1
+        scheduler: 'linear_warmup_cosine_decay'
+        n_warmup_steps: 50
 longdoc:
     chordmixer:
       backbone:

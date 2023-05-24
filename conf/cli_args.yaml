@@ -1,11 +1,11 @@
 # conf/cli_args.yaml
 
-problem: genbank
+problem: speech_commands
 model: chordmixer
 diff_len: True
 metric: acc
 loss: crossentropy
 data_dir: .
 ckpt_dir: .
-num_workers: 8
+num_workers: 1
 n_devices: -1
