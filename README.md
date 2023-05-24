@@ -1,6 +1,5 @@
 # AudioChordMixer
 
-To run in Google Colab, just open Google Colab, go to file --> open, then open from github, and paste in the URL of this repo.
 
 This is an adaptation of ChordMixer by Ruslan Khalitov, et. al. See ChordMixer: A Scalable Neural Attention Model For Sequences With Different Lengths [Accepted to ICLR'23]
 
@@ -14,3 +13,5 @@ The dataset comes from HuggingFace's speech_commands v0.01 dataset, and has been
 The examples vary in length, but all are around 16,000 samples long.  
 
 I tokenized each example and then trained the ChordMixer network on them, and it is now able to classify those examples with a 77% accuracy on the validation set.  That is not an especially high accuracy, but it proves that audio files can be understood as a sequence by a neural network rather than as a spectrogram, which is the prevailing method at the time of this repository's release.
+
+To run in Google Colab, just open Google Colab, go to file --> open, then open from github, and paste in the URL of this repo.
